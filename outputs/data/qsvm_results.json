@@ -1,0 +1,144 @@
+{
+  "dataset_source": "sklearn.load_iris fallback; Moodle train/test CSV files were not found",
+  "dataset_detail": {
+    "expected_train_files": [
+      "data/moodle_train.csv",
+      "data/train.csv",
+      "data/training.csv"
+    ],
+    "expected_test_files": [
+      "data/moodle_test.csv",
+      "data/test.csv",
+      "data/testing.csv"
+    ]
+  },
+  "feature_names": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ],
+  "class_names": [
+    "setosa",
+    "versicolor",
+    "virginica"
+  ],
+  "n_qubits": 4,
+  "train_shape": [
+    105,
+    4
+  ],
+  "test_shape": [
+    45,
+    4
+  ],
+  "feature_scaling": "MinMaxScaler(feature_range=(0, pi)); fit on train, transform test",
+  "models": {
+    "zz_feature_map": {
+      "accuracy": 0.8,
+      "confusion_matrix": [
+        [
+          11,
+          2,
+          2
+        ],
+        [
+          2,
+          13,
+          0
+        ],
+        [
+          1,
+          2,
+          12
+        ]
+      ],
+      "classification_report": {
+        "setosa": {
+          "precision": 0.7857142857142857,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.7586206896551724,
+          "support": 15.0
+        },
+        "versicolor": {
+          "precision": 0.7647058823529411,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.8125,
+          "support": 15.0
+        },
+        "virginica": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8,
+          "f1-score": 0.8275862068965517,
+          "support": 15.0
+        },
+        "accuracy": 0.8,
+        "macro avg": {
+          "precision": 0.8025210084033613,
+          "recall": 0.8000000000000002,
+          "f1-score": 0.7995689655172414,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.8025210084033613,
+          "recall": 0.8,
+          "f1-score": 0.7995689655172414,
+          "support": 45.0
+        }
+      }
+    },
+    "hea_feature_map": {
+      "accuracy": 0.911111,
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          1
+        ],
+        [
+          0,
+          3,
+          12
+        ]
+      ],
+      "classification_report": {
+        "setosa": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "versicolor": {
+          "precision": 0.8235294117647058,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.875,
+          "support": 15.0
+        },
+        "virginica": {
+          "precision": 0.9230769230769231,
+          "recall": 0.8,
+          "f1-score": 0.8571428571428571,
+          "support": 15.0
+        },
+        "accuracy": 0.9111111111111111,
+        "macro avg": {
+          "precision": 0.9155354449472096,
+          "recall": 0.9111111111111111,
+          "f1-score": 0.9107142857142857,
+          "support": 45.0
+        },
+        "weighted avg": {
+          "precision": 0.9155354449472096,
+          "recall": 0.9111111111111111,
+          "f1-score": 0.9107142857142857,
+          "support": 45.0
+        }
+      }
+    }
+  }
+}
